@@ -1,1 +1,15 @@
 = Deneme Başlığı(level 0)
+ 
+ Boşluk bırakılarak yazıldığında paragraf algılıyor.
+ 
+**Yıldız içinde kalın yazıyor**
+ 
+=== Deneme Başlığı 2(level 2)
+
+Artı  ile satır atlama, +
+deneme satırı.
+
+[%hardbreaks]
+Hardbreaks ile satır atlama.
+deneme satırı.
+ 
