@@ -1,0 +1,17 @@
+.Önemli bloğu
+[IMPORTANT]
+====
+Satır atlamayın
+====
+
+.Dikkat bloğu
+[CAUTION]
+====
+Dikkat işlem önceliği uygulayın 
+====
+
+.Uyarı bloğu
+[WARNING]
+====
+Devam etmek istediğinize emin misiniz?
+====

@@ -1,0 +1,17 @@
+=== Block
+
+
+image::https://www.tohumdunyasi.com.tr/image/cache/catalog/i%C3%A7ek/mor%20m%C3%BCcevher%203-84x84.jpg[caption="Şekil 1. ",title="ÇİÇEK"]
+'''
+=== Inline
+Click image:https://d33wubrfki0l68.cloudfront.net/f7fd8f96eddbcbe7c4de8ddf1f094f6659b3df06/bae11/images/icons/play.png[Play, title="Play"] to get the party started.
+
+Click image:https://d33wubrfki0l68.cloudfront.net/6effc9a59d872e4596b6b3e1c81d744a634266b3/85cc3/images/icons/pause.png[title="Pause"] when you need a break.
+
+
+'''
+
+=== Inline image with positioning rol
+
+image:https://www.tohumdunyasi.com.tr/image/cache/catalog/i%C3%A7ek/mor%20m%C3%BCcevher%203-84x84.jpg[Sunset,100,100,role="left"] What a beautiful flower!
+

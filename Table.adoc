@@ -1,0 +1,13 @@
+==== #*Table with two columns, a header, and two rows of content*#
+
+[%header,cols=2*] 
+|===
+| Column 1
+| Column 2
+
+|1.1
+|2.1
+
+|1.2
+|2.2
+|===

@@ -1,0 +1,43 @@
+= Links
+
+=== External
+
+http://edestek.kocaeli.edu.tr 
+
+
+https://github.com/asciidoctor[Asciidoctor  *GitHub Sayfasına Git*]
+
+=== With spaces and special characters
+
+link:++https://example.org/?hl=tr[&gl=TR] ++[Özel karakter kullanımı- 1]
+
+link:https://www.youtube.com/?hl=tr&gl=TR[Özel Karakter kullanımı - 2]
+
+
+
+=== Relative
+
+link:baslik.adoc[Linkteki dosya veya htmli çalıştırma]
+
+
+ 
+=== Link with attributes 
+
+http://discuss.asciidoctor.org[Discuss Asciidoctor, role="external", window="_blank"]
+
+http://discuss.asciidoctor.org[Discuss Asciidoctor^]
+
+
+=== Inline anchors
+
+[[bookmark-a]]Satır içi referans yapılabilir.
+
+[#bookmark-b]#Satır içinde bunun gibi bir ifadeye yapılabilir.#
+
+anchor:bookmark-c[]Cross referance.
+
+[[bookmark-d,last paragraph]]The xreflabel attribute will be used as link text in the cross-reference link.
+
+
+
+
