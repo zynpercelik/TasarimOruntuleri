@@ -1,6 +1,6 @@
-=== Plant Uml Örnek
+=== Use Case Örnek
 
-image::Uml_image.png[]
+image::Usecase.png[]
 
 @startuml
 skinparam packageStyle rectangle
