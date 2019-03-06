@@ -3,7 +3,7 @@
 '''
 == Deneme Başlığı(level 1)
  
- Boşluk bırakılarak yazıldığında paragraf algılıyor.
+ Boşluk bırakılarak yazıldığında önceden belirlenmiş formatı uyguluyor.
  
 **Yıldız içinde kalın yazıyor**
  
