@@ -39,5 +39,9 @@ anchor:bookmark-c[]Cross referance.
 [[bookmark-d,last paragraph]]The xreflabel attribute will be used as link text in the cross-reference link.
 
 
+=== Internal cross references
+
+<<Deneme Başlığı(level 1)>> gitmek için tıklayın.
+
 
 
