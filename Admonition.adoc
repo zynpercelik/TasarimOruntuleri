@@ -1,16 +1,24 @@
-.Önemli bloğu
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+ 
+.ÖNEMLİ
 [IMPORTANT]
 ====
 Satır atlamayın
 ====
 
-.Dikkat bloğu
+.DİKKAT
 [CAUTION]
 ====
 Dikkat işlem önceliği uygulayın 
 ====
 
-.Uyarı bloğu
+.UYARI
 [WARNING]
 ====
 Devam etmek istediğinize emin misiniz?
