@@ -1,5 +1,6 @@
+=== Plant Uml Örnek
 
-image::Uml_image.png
+image::Uml_image.png[]
 
 @startuml
 skinparam packageStyle rectangle
