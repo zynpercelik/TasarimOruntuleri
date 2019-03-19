@@ -1,7 +1,10 @@
 
-image::UseCase1.png[caption="Şekil 1. ",title="Soğuk Hava Deposu"]
+image::UseCase2.png[caption="Şekil 2. ",title="Soğuk Hava Deposu"]
+
+
 
 @startuml
+
 title Soğuk Hava Deposu - Use Case Diagram 
 
 Güvenlik -up-|> User 
@@ -13,7 +16,7 @@ Supervisor -up-|> User
 Güvenlik..> (Login) 
 Personel..> (Login)
 Supervisor --> (Login)
-
+Supervisor --> (Create / Delete User): Tüm yetkiler benim
 
 (Login) as L
 (Depo Dashboard) as (Depo)
@@ -22,15 +25,16 @@ Supervisor --> (Login)
 
 L--> Depo
 L--> Filo
-L--> KP 
+L--> KP : Yetki Kontrolü 
 
 Depo --> (Ürün Analizi)
 Depo --> (Depo Fiziki Durumu) 
 Depo -down-> (Görevli Hakkında)
 Filo--> (Araç Analizi)
-KP --> (Ürün Girişi) 
+KP --> (Ürün Girişi)
 KP --> (Ürün Çıkışı) 
 KP --> (Depo Ayarları) 
+
 (Ürün Girişi) -->(EXİT)
 (Ürün Çıkışı) -->(EXİT)
 (Depo Ayarları)-->(EXİT)
