@@ -1,10 +1,10 @@
 
-image::UseCase2.png[caption="Şekil 2. ",title="Soğuk Hava Deposu"]
+image::UseCase3.png[caption="Şekil 3. ",title="Soğuk Hava Deposu"]
+
 
 
 
 @startuml
-
 title Soğuk Hava Deposu - Use Case Diagram 
 
 Güvenlik -up-|> User 
@@ -29,12 +29,11 @@ L--> KP : Yetki Kontrolü
 
 Depo --> (Ürün Analizi)
 Depo --> (Depo Fiziki Durumu) 
-Depo -down-> (Görevli Hakkında)
+Depo -down-> (Görevli Hakkında): O gün depodaki görevli \n personellerin iletişim ve sağlık bilgileri
 Filo--> (Araç Analizi)
-KP --> (Ürün Girişi)
-KP --> (Ürün Çıkışı) 
-KP --> (Depo Ayarları) 
-
+KP --> (Ürün Girişi) :Belirlenen miktarın \n üzerinde alım yapılamaz!
+KP --> (Ürün Çıkışı) :Araç bakımı yapıldı mı? \n Ürün yolculuk süresine uygun mu?
+KP --> (Depo Ayarları) :Doluluk kapatesi artırılsın mı? \n Sıcaklık belirlenen limitin üstüne çıkmasın
 (Ürün Girişi) -->(EXİT)
 (Ürün Çıkışı) -->(EXİT)
 (Depo Ayarları)-->(EXİT)
