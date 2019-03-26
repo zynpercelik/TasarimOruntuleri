@@ -7,38 +7,47 @@ image::UseCase3.png[caption="Şekil 3. ",title="Soğuk Hava Deposu"]
 @startuml
 title Soğuk Hava Deposu - Use Case Diagram 
 
-Güvenlik -up-|> User 
-Şöför -up-|> User
-Personel -up-|> User
-Supervisor -up-|> User
+left to right direction
+skinparam packageStyle rectangle
+rectangle {
+ 
 
-Şöför..> (Login)
-Güvenlik..> (Login) 
-Personel..> (Login)
-Supervisor --> (Login)
-Supervisor --> (Create / Delete User): Tüm yetkiler benim
-
-(Login) as L
-(Depo Dashboard) as (Depo)
+(Depo Dashboard) as (DD)
 (Kontrol Paneli) as KP
 (Filo Dashboard) as Filo
 
-L--> Depo
-L--> Filo
-L--> KP : Yetki Kontrolü 
 
-Depo --> (Ürün Analizi)
-Depo --> (Depo Fiziki Durumu) 
-Depo -down-> (Görevli Hakkında): O gün depodaki görevli \n personellerin iletişim ve sağlık bilgileri
-Filo--> (Araç Analizi)
-KP --> (Ürün Girişi) :Belirlenen miktarın \n üzerinde alım yapılamaz!
-KP --> (Ürün Çıkışı) :Araç bakımı yapıldı mı? \n Ürün yolculuk süresine uygun mu?
-KP --> (Depo Ayarları) :Doluluk kapatesi artırılsın mı? \n Sıcaklık belirlenen limitin üstüne çıkmasın
-(Ürün Girişi) -->(EXİT)
-(Ürün Çıkışı) -->(EXİT)
-(Depo Ayarları)-->(EXİT)
-(Ürün Analizi) -->(EXİT)
-(Görevli Hakkında) -->(EXİT)
-(Depo Fiziki Durumu) -->(EXİT)
-(Araç Analizi)-->(EXİT)
+DD <..  (Ürün Analizi) :extends
+DD <.. (Depo Durumu) :extends
+DD <..  (Görevli Hakkında) :extends
+Filo <..  (Araç Analizi):extends
+KP <..  (Ürün Girişi) :extends
+KP <..  (Ürün Çıkışı) :extends
+KP <..  (Depo Ayarları) :extends
+
+(Ürün Girişi)..> (Ürün) :include
+(Ürün Çıkışı)..> (Ürün) :include
+(Ürün Analizi)..> (Ürün) :include
+(Ürün Çıkışı)..> (Araç) :include
+(Araç Analizi)..> (Araç) :include
+(Görevli Hakkında)..> (Çalışan) :include
+(Depo Durumu)..> (Depo) :include
+(Depo Ayarları)..> (Depo) :include
+}
+
+
+Şöför-->(Filo)
+
+Güvenlik-->(DD)
+
+Personel--> (DD)
+Personel--> (KP)
+
+Admin -->(DD)
+Admin -->(KP)
+Admin -->(Filo)
+
+
+
+
 @enduml
