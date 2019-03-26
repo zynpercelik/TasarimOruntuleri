@@ -1,0 +1,67 @@
+@startuml
+
+title Soğuk Hava Deposu - Class Diagram
+
+
+class Urun {
+  +Int Id
+  +Int Max
+  +Int Min
+  +Int Miktar
+  +Date GirisTarihi
+  +Date CikisTarihi
+  +Int  Dayanıklılık
+  +Int Fiyat
+  +Text Ad
+  +Text Birimi  
+  }
+
+class Calisan{
++Int Id
++Text Ad
++Text Departman
++Int Yas
++Text KanGrubu
++Date İseGirisTarihi
++Int Maas
++Text Sifre
+
+}
+
+
+class Depo{
++Int Sicaklik
++Int Yuzolcumu
++Int Kapasite
++Int CalisanId
++Int UrunId
++Int AracId
+-Text InternetSifresi
++KameralarınDurumu(bool)
+
+}
+
+class Arac {
+
++Int Id
++Int ModelYili(Yasi)
++Text Model
++Int Yakıt 
++Int Km
++Date SonBakimTarihi
++Int SurucuId
++Int TasinanUrunId
+
+
+
+}
+
+
+
+Depo "1" o-up- "many" Arac: Aggeregation
+Depo "1" o-up- "many" Urun: Aggeregation
+Depo "1" o-up- "many" Calisan: Aggeregation
+Arac "many" -left- "many  " Urun   : ***Taşınır***
+Arac "1" -- "1" Calisan   : Kullanır
+Urun "1" -- "many" Calisan   : İşlenir
+@enduml
