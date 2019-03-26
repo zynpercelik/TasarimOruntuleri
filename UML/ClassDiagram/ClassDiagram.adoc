@@ -1,3 +1,4 @@
+image::ClassDiagram.png[caption="Class Diagram ",title="Soğuk Hava Deposu"]
 @startuml
 
 title Soğuk Hava Deposu - Class Diagram
