@@ -1,4 +1,5 @@
 image::classdiagram.png[caption="Class Diagram ",title="Soğuk Hava Deposu"]
+
 @startuml
 
 title Soğuk Hava Deposu - Class Diagram
@@ -13,19 +14,20 @@ class Urun {
   +Date CikisTarihi
   +Int  Dayanıklılık
   +Int Fiyat
-  +Text Ad
-  +Text Birimi  
+  +String  Ad
+  +String  Birim  
   }
 
-class Calisan{
+abstract class Calisan{
 +Int Id
-+Text Ad
-+Text Departman
++String Ad
++String  Departman
 +Int Yas
-+Text KanGrubu
++String  KanGrubu
 +Date İseGirisTarihi
 +Int Maas
-+Text Sifre
++String  Sifre
++Yetkiler()
 
 }
 
@@ -37,7 +39,7 @@ class Depo{
 +Int CalisanId
 +Int UrunId
 +Int AracId
--Text InternetSifresi
+-String  InternetSifresi
 +KameralarınDurumu(bool)
 
 }
@@ -46,23 +48,35 @@ class Arac {
 
 +Int Id
 +Int ModelYili(Yasi)
-+Text Model
++String  Model
 +Int Yakıt 
 +Int Km
 +Date SonBakimTarihi
 +Int SurucuId
 +Int TasinanUrunId
 
-
-
 }
 
 
 
+Calisan <|-- Personel
+
+Calisan <|-- Güvenlik
+
+Calisan <|-- Şöför
+
+Class Şöför{
+
++Int AracId
+
++DoldurmasıGerekenKm(Int AracId)
+
+}
+
 Depo "1" o-up- "many" Arac: Aggeregation
 Depo "1" o-up- "many" Urun: Aggeregation
 Depo "1" o-up- "many" Calisan: Aggeregation
-Arac "many" -left- "many  " Urun   : ***Taşınır***
-Arac "1" -- "1" Calisan   : Kullanır
-Urun "1" -- "many" Calisan   : İşlenir
+Arac "many" -right- "many  " Urun   : **Taşınır**
+Arac "1" -- "1" Calisan   : **Kullanır**
+Urun "1" -- "many" Calisan   :** İşlenir**
 @enduml
