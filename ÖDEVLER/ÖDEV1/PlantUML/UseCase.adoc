@@ -23,10 +23,9 @@ note "Uygulamaya Yönlendiriliyor" as N2
 (Start) .. N2
 N2 .. (Use)
 
-rectangle Proje {
-
-
-  (Anasayfa) .down->(Kategoriler) : include
+rectangle Proje
+{
+ (Anasayfa) .down->(Kategoriler) : include
   (Kategoriler) .down-> (Kategori) : include
 
 
@@ -34,8 +33,6 @@ rectangle Proje {
   (Use)  --> (Sepet)
 
   (Onay) .down-> (Ödeme) : include
-
   (Sepet) .down-> (Onay) : include
- 
 }
 @enduml
