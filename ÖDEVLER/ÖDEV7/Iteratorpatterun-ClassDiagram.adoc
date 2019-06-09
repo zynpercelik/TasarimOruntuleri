@@ -1,5 +1,5 @@
 
-image::IteratorPattern.png[caption="Şekil 1.",title=" Iterator Pattern"]
+image::IteratorPattern.png[caption="Şekil 1.",title=" Iterator Pattern",alt="IteratorPattern.png"]
 
 
 *Aşağıda  proje kodları ve plantUml kodları mevcuttur.*
