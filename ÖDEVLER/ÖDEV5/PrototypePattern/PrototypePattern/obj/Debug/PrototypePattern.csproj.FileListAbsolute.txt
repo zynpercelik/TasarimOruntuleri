@@ -1,0 +1,7 @@
+D:\YL Dersler\DesignPattern\ÖDEVLER\ÖDEV5\PrototypePattern\PrototypePattern\obj\Debug\PrototypePattern.csprojAssemblyReference.cache
+D:\YL Dersler\DesignPattern\ÖDEVLER\ÖDEV5\PrototypePattern\PrototypePattern\obj\Debug\PrototypePattern.csproj.CoreCompileInputs.cache
+D:\YL Dersler\DesignPattern\ÖDEVLER\ÖDEV5\PrototypePattern\PrototypePattern\bin\Debug\PrototypePattern.exe.config
+D:\YL Dersler\DesignPattern\ÖDEVLER\ÖDEV5\PrototypePattern\PrototypePattern\bin\Debug\PrototypePattern.exe
+D:\YL Dersler\DesignPattern\ÖDEVLER\ÖDEV5\PrototypePattern\PrototypePattern\bin\Debug\PrototypePattern.pdb
+D:\YL Dersler\DesignPattern\ÖDEVLER\ÖDEV5\PrototypePattern\PrototypePattern\obj\Debug\PrototypePattern.exe
+D:\YL Dersler\DesignPattern\ÖDEVLER\ÖDEV5\PrototypePattern\PrototypePattern\obj\Debug\PrototypePattern.pdb
