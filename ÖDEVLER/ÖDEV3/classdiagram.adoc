@@ -1,0 +1,99 @@
+
+@startuml
+
+title Soğuk Hava Deposu - Class Diagram
+
+
+class Urun {
+  +Int Id
+  +Int Max
+  +Int Min
+  +Int Miktar
+  +Date GirisTarihi
+  +Date CikisTarihi
+  +Int  Dayanıklılık
+  +Int Fiyat
+  +String  Ad
+  +String  Birim  
+  }
+
+abstract class Calisan{
++Int Id
++String Ad
++String  Departman
++Int Yas
++String  KanGrubu
++Date İseGirisTarihi
++Int Maas
++String Sifre
++Yetkiler(String Departman)
+
+}
+
+
+class Depo{
++Int Sicaklik
++Int Yuzolcumu
++Int Kapasite
++Int CalisanId
++Int UrunId
++Int AracId
++Int SistemId
+-String InternetSifresi
++KameralarınDurumu(bool)
+
+}
+
+class KontrolSistemi{
++Int Id
++Int MaxSicaklik
++Int MaxKapasite
++Int DepoId
+
+}
+
+class Arac {
+
++Int Id
++String  Model
++Int Yakıt 
++Int Km
++Date SonBakimTarihi
++Int SurucuId
++Int UrunId
+
+
+
+}
+
+
+
+
+Calisan <|-- Personel
+
+Calisan <|-- Şöför
+
+Class Şöför{
+
++Int AracId
+
++KullandığıAraçListesi(Int AracId)
+
+}
+
+Class Personel{
+
++Int UrunId
+
++UrunListesi(Int AracId)
+
+}
+
+Depo "1" o-up- "many" Arac: Aggeregation
+Depo "1" o-up- "many" Urun: Aggeregation
+Depo "1" o-up- "many" Calisan: Aggeregation
+Depo "1" o-up- "1" KontrolSistemi: Aggeregation
+Arac "many" -right- "many  " Urun   : **Taşınır**
+Arac "many" -- "many" Şöför   : **Kullanır**
+Urun "many" -- "many" Personel  :** İşlenir**
+@enduml
