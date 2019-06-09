@@ -1,0 +1,19 @@
+== [underline]#Lists#
+
+
+.Numarasız liste
+* $ pwd
+** /home
+*** /zeynep
+**** /odev
+
+* $ mkdir odev 
+
+.Numaralı liste
+. ls
+.. ../Klasor1
+... /deneme.html
+. ls -a
+. ls Belgeler -lh
+
+

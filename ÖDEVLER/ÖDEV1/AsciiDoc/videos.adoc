@@ -1,0 +1,9 @@
+= Videos
+
+=== Block
+
+video::video_file.mp4[width=320, start=100, end=200, options=autoplay]
+
+=== Embedded Youtube video
+
+video::XCrMzU3Wy5g[youtube]

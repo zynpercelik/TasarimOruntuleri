@@ -1,0 +1,10 @@
+
+Use Case Ödevi
+
+https://github.com/zynpercelik/TasarimOruntuleri/tree/master/UML/UseCase
+
+Soðuk Hava Deposu için planlanmýþ use case çizimleri görülmektedir.
+Bu soðuk hava deposunda personeller yetkilerine göre iþlem yapabilecek olup 
+ürün ve depo güvenliði korunmasýný amaçlanmýþtýr.
+Sürüm 3 te belirtilen uyarýlar doðrultusunda sistem hareket etmektedir.
+

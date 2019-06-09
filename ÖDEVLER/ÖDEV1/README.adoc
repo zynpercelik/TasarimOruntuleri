@@ -1,0 +1,195 @@
+= READ ME
+
+'''
+== Deneme Başlığı(level 1)
+ 
+ Boşluk bırakılarak yazıldığında önceden belirlenmiş formatı algılıyor.
+ 
+**Yıldız içinde kalın yazıyor**
+ 
+=== Deneme Başlığı (level 2)
+
+Artı  ile satır atlama, +
+deneme satırı.
+
+[%hardbreaks]
+Hardbreaks ile satır atlama.
+deneme satırı.
+
+'''
+== [underline]#Lists#
+
+
+.Numarasız liste
+* $ pwd
+** /home
+*** /zeynep
+**** /odev
+
+* $ mkdir odev 
+
+.Numaralı liste
+. ls
+.. ../Klasor1
+... /deneme.html
+. ls -a
+. ls Belgeler -lh
+
+'''
+
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+ 
+.ÖNEMLİ
+[IMPORTANT]
+====
+Satır atlamayın
+====
+
+.DİKKAT
+[CAUTION]
+====
+Dikkat işlem önceliği uygulayın 
+====
+
+.UYARI
+[WARNING]
+====
+Devam etmek istediğinize emin misiniz?
+====
+
+'''
+= Links
+
+=== External
+
+http://edestek.kocaeli.edu.tr 
+
+
+https://github.com/asciidoctor[Asciidoctor  *GitHub Sayfasına Git*]
+
+=== With spaces and special characters
+
+link:++https://example.org/?hl=tr[&gl=TR] ++[Özel karakter kullanımı- 1]
+
+link:https://www.youtube.com/?hl=tr&gl=TR[Özel Karakter kullanımı - 2]
+
+
+
+=== Relative
+
+link:baslik.adoc[Linkteki dosya veya htmli çalıştırma]
+
+
+ 
+=== Link with attributes 
+
+http://discuss.asciidoctor.org[Discuss Asciidoctor, role="external", window="_blank"]
+
+http://discuss.asciidoctor.org[Discuss Asciidoctor^]
+
+
+=== Inline anchors
+
+[[bookmark-a]]Satır içi referans yapılabilir.
+
+[#bookmark-b]#Satır içinde bunun gibi bir ifadeye yapılabilir.#
+
+anchor:bookmark-c[]Cross referance.
+
+[[bookmark-d,last paragraph]]The xreflabel attribute will be used as link text in the cross-reference link.
+
+
+=== Internal cross references
+
+<<Deneme Başlığı(level 1)>> gitmek için tıklayın.
+
+'''
+
+=== Block
+
+
+image::cicek.jpg[caption="Şekil 1. ",title="ÇİÇEK"]
+'''
+=== Inline
+Click image:https://d33wubrfki0l68.cloudfront.net/f7fd8f96eddbcbe7c4de8ddf1f094f6659b3df06/bae11/images/icons/play.png[Play, title="Play"] to get the party started.
+
+Click image:https://d33wubrfki0l68.cloudfront.net/6effc9a59d872e4596b6b3e1c81d744a634266b3/85cc3/images/icons/pause.png[title="Pause"] when you need a break.
+
+
+'''
+
+=== Inline image with positioning rol
+
+image:https://www.tohumdunyasi.com.tr/image/cache/catalog/i%C3%A7ek/mor%20m%C3%BCcevher%203-84x84.jpg[Sunset,100,100,role="left"] What a beautiful flower!
+
+
+
+'''
+
+= Videos
+
+=== Block
+
+video::video_file.mp4[width=320, start=100, end=200, options=autoplay]
+
+=== Embedded Youtube video
+
+video::XCrMzU3Wy5g[youtube]
+
+'''
+.C++
+[source,c++]
+----
+#include <stdio.h>
+ 
+int is_prime(int number);
+ 
+int main()
+{
+   int i;
+ 
+   for (i = 0; i <= 1000; i++)
+      if (is_prime(i))
+         printf("%d ", i);
+   return 0;
+}
+----
+
+'''
+
+.Linux bash script 
+[source,bash]
+----
+#!/bin/bash
+# Basit bir Bash Script
+# Umut 10/05/2016
+echo İşte sizin Ev klasörünüzdeki dosyalar:
+ls ~
+----
+
+'''
+
+==== #*Table with two columns, a header, and two rows of content*#
+
+[%header,cols=2*] 
+|===
+| Column 1
+| Column 2
+
+|1.1
+|2.1
+
+|1.2
+|2.2
+|===
+
+'''
+
+
+
