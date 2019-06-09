@@ -1,0 +1,105 @@
+
+image::AbstractFactoryPattern-.png[caption="Şekil 1.",title=" AbstractFactory",alt="AbstractFactoryPattern-.png"]
+
+
+*Aşağıda  proje kodları mevcuttur.*
+
+PROJE KODLARI :
+
+ class Program {
+        static void Main(string[] args)
+        {
+           IUrunFactory factory = new YesilFactory();
+            var YesilElma = factory.Elma();
+            var YesilErik= factory.Erik();
+            Console.WriteLine(YesilErik.ErikFeature());
+            Console.WriteLine(YesilElma.ElmaFeature());
+            IUrunFactory factory2 = new KırmızıFactory();
+            var KırmızıElma = factory2.Elma();
+            var KırmızıErik = factory2.Erik();
+            Console.WriteLine(KırmızıErik.ErikFeature());
+            Console.WriteLine(KırmızıElma.ElmaFeature());
+            Console.Read();
+        }
+    }
+    
+ ---------------------------------------------- 
+ 
+ public interface IUrunFactory
+    {
+        IUrunFactoryElma Elma();
+        IUrunFactoryErik Erik();
+    }
+
+ public interface IUrunFactoryErik
+    {
+        string ErikFeature();
+    }
+
+ public interface IUrunFactoryElma
+    {
+        string ElmaFeature();
+    }
+
+ class YesilElma : IUrunFactoryElma
+    {
+        public string ElmaFeature()
+        {
+            return "Bu ürün yeşil elma özelliklerini taşımaktadır.";
+        }
+    }
+
+ class KırmızıElma : IUrunFactoryElma
+    {
+        public string ElmaFeature()
+        {
+            return "Bu ürün kırmızı elma özelliklerini taşımaktadır.";
+        }
+    }
+
+    class YesilErik : IUrunFactoryErik
+    {
+        public string ErikFeature()
+        {
+            return "Bu ürün yeşil erik özelliklerini taşımaktadır.";
+        }
+    }
+
+    class KırmızıErik : IUrunFactoryErik
+    {
+        public string ErikFeature()
+        {
+            return "Bu ürün kırmızı erik özelliklerini taşımaktadır.";
+        }
+    }
+    
+    --------------------------------------
+    
+      class KırmızıFactory : IUrunFactory
+    {
+        public IUrunFactoryElma Elma()
+        {
+            return new KırmızıElma();
+        }
+        public IUrunFactoryErik Erik()
+        {
+            return new KırmızıErik();
+        }
+    }
+    -----------------------------------------
+     class YesilFactory : IUrunFactory
+    {
+        public IUrunFactoryElma Elma()
+        {
+            return new  YesilElma();
+        }
+
+        public IUrunFactoryErik Erik()
+        {
+            return new YesilErik();
+        }
+    }
+    
+    
+    
+

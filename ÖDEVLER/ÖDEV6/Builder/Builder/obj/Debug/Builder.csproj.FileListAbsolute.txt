@@ -1,0 +1,7 @@
+D:\YL Dersler\DesignPattern\Proje\Builder\Builder\bin\Debug\Builder.exe.config
+D:\YL Dersler\DesignPattern\Proje\Builder\Builder\bin\Debug\Builder.exe
+D:\YL Dersler\DesignPattern\Proje\Builder\Builder\bin\Debug\Builder.pdb
+D:\YL Dersler\DesignPattern\Proje\Builder\Builder\obj\Debug\Builder.csprojAssemblyReference.cache
+D:\YL Dersler\DesignPattern\Proje\Builder\Builder\obj\Debug\Builder.csproj.CoreCompileInputs.cache
+D:\YL Dersler\DesignPattern\Proje\Builder\Builder\obj\Debug\Builder.exe
+D:\YL Dersler\DesignPattern\Proje\Builder\Builder\obj\Debug\Builder.pdb

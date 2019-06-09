@@ -1,0 +1,14 @@
+D:\YL Dersler\DesignPattern\Proje\AbstractFactroy\AbstractFactroy\obj\Debug\AbstractFactroy.csproj.CoreCompileInputs.cache
+D:\YL Dersler\DesignPattern\Proje\AbstractFactroy\AbstractFactroy\bin\Debug\AbstractFactroy.exe.config
+D:\YL Dersler\DesignPattern\Proje\AbstractFactroy\AbstractFactroy\bin\Debug\AbstractFactroy.exe
+D:\YL Dersler\DesignPattern\Proje\AbstractFactroy\AbstractFactroy\bin\Debug\AbstractFactroy.pdb
+D:\YL Dersler\DesignPattern\Proje\AbstractFactroy\AbstractFactroy\obj\Debug\AbstractFactroy.exe
+D:\YL Dersler\DesignPattern\Proje\AbstractFactroy\AbstractFactroy\obj\Debug\AbstractFactroy.pdb
+D:\YL Dersler\DesignPattern\Proje\AbstractFactroy\AbstractFactroy\obj\Debug\AbstractFactroy.csprojAssemblyReference.cache
+D:\YL Dersler\DesignPattern\ÖDEVLER\ÖDEV6\AbstractFactroy\AbstractFactroy\bin\Debug\AbstractFactroy.exe.config
+D:\YL Dersler\DesignPattern\ÖDEVLER\ÖDEV6\AbstractFactroy\AbstractFactroy\bin\Debug\AbstractFactroy.exe
+D:\YL Dersler\DesignPattern\ÖDEVLER\ÖDEV6\AbstractFactroy\AbstractFactroy\bin\Debug\AbstractFactroy.pdb
+D:\YL Dersler\DesignPattern\ÖDEVLER\ÖDEV6\AbstractFactroy\AbstractFactroy\obj\Debug\AbstractFactroy.csprojAssemblyReference.cache
+D:\YL Dersler\DesignPattern\ÖDEVLER\ÖDEV6\AbstractFactroy\AbstractFactroy\obj\Debug\AbstractFactroy.csproj.CoreCompileInputs.cache
+D:\YL Dersler\DesignPattern\ÖDEVLER\ÖDEV6\AbstractFactroy\AbstractFactroy\obj\Debug\AbstractFactroy.exe
+D:\YL Dersler\DesignPattern\ÖDEVLER\ÖDEV6\AbstractFactroy\AbstractFactroy\obj\Debug\AbstractFactroy.pdb
