@@ -1,0 +1,7 @@
+D:\YL Dersler\DesignPattern\Proje\SoğukHavaDeposu\SoğukHavaDeposu\bin\Debug\SoğukHavaDeposu.exe.config
+D:\YL Dersler\DesignPattern\Proje\SoğukHavaDeposu\SoğukHavaDeposu\bin\Debug\SoğukHavaDeposu.exe
+D:\YL Dersler\DesignPattern\Proje\SoğukHavaDeposu\SoğukHavaDeposu\bin\Debug\SoğukHavaDeposu.pdb
+D:\YL Dersler\DesignPattern\Proje\SoğukHavaDeposu\SoğukHavaDeposu\obj\Debug\SoğukHavaDeposu.csproj.CoreCompileInputs.cache
+D:\YL Dersler\DesignPattern\Proje\SoğukHavaDeposu\SoğukHavaDeposu\obj\Debug\SoğukHavaDeposu.exe
+D:\YL Dersler\DesignPattern\Proje\SoğukHavaDeposu\SoğukHavaDeposu\obj\Debug\SoğukHavaDeposu.pdb
+D:\YL Dersler\DesignPattern\Proje\SoğukHavaDeposu\SoğukHavaDeposu\obj\Debug\SoğukHavaDeposu.csprojAssemblyReference.cache
